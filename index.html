@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameera Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/848f8b6cbf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div class="nav-bar-header">
+    <nav>
+        <a href="#"><img class="logo-img" src="./images/logoAmi.png" alt=""></a>
+
+        <ul id="side-menu">
+            <li><a href="#home-div" onmouseover="closeMenu()">Home</a></li>
+            <li><a href="#about-div" onmouseover="closeMenu()">About</a></li>
+            <li><a href="#service-div" onmouseover="closeMenu()">Services</a></li>
+            <li><a href="#portfolio-div" onmouseover="closeMenu()">Portfolio</a></li>
+            <li><a href="#contact-div" onmouseover="closeMenu()">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+</div>
+
+<div class="main-container">
+
+    <!-- Home Page Start -->
+
+    <div class="home-page" id="home-div" >
+            <div class="container-home">
+                <div class="home-row">
+
+
+                    <div class="profile-header">
+                        <p>Front End Developer</p>
+                        <h2>I am <span style="color: rgb(242, 3, 95);">AMEERA</span> from India</h2>
+                        <p class="lang-text">HTML, CSS, JS, React JS, jQuery, Bootstrap, JSON</p>
+                    </div>
+
+                    <div class="profile-image">
+                        <img src="./images/profilepic.png" class="my-profile-pic"  alt="">
+                    </div>
+
+
+
+                </div>
+               
+
+            </div>
+    </div> 
+
+    <!-- Home Page End -->
+
+
+    <!-- About Page Start -->
+
+    <div class="about-page" id="about-div">
+            <div class="container-about">
+                <h1 class="title-about" >
+                    About Me
+                </h1>
+                <div class="about-row">
+                    <div class="photo-about-col">
+                        <img class="my-photo" src="./images/user1.jpg" alt="">
+                    </div>
+                    <div class="text-about-col">
+                        <p class="description-about">
+                            With <span>4.7 years</span> of experience and a strong background in <span>UI/Frontend </span>and <span>Web Development</span> , 
+                            I possess a solid foundation in front-end technologies, including <span>HTML5, CSS3, and JavaScript</span> and basic experience and knowledge of the popular front-end framework <span>React.js</span> . 
+                        </p>
+                        <div class="about-tabs">
+                            <p class="tab-item skills-tab active-link" onclick="displayContent('skills')" >Skills</p>
+                            <p class="tab-item exp-tab" onclick="displayContent('experience')">Experience</p>
+                            <p class="tab-item edu-tab" onclick="displayContent('education')" >Education</p>
+                        </div>
+    <!------------------- Skills ------------------->
+                        <div class="about-tabs-content skills-content active-tab">
+                            <ul>
+                                <li>
+                                    <span class="color-span">Front End Technologies: </span><span>HTML5, CSS3, JavaScript ES6, React JS, SASS/SCSS, LESS,Bootstrap, Media Queries</span> 
+                                </li>
+
+                                <li>
+                                    <span class="color-span">APIs: </span><span>RESTful APIs, AJAX (Both Basics) </span>
+                                </li>
+
+                                <li>
+                                    <span class="color-span">Version Control: </span><span>Git, Github, SVN</span> 
+                                </li>
+
+                                <li>
+                                    <span class="color-span">Package Managers: </span><span>NPM, Yarn</span>
+                                </li>
+
+                                <li>
+                                    <span class="color-span">CI/CD: </span> <span>Jenkins, Travis CI (Basics)</span>
+                                </li>
+
+                                <li>
+                                    <span class="color-span">UI/UX Design: </span><span>PSD, Adobe Illustrator, Figma(Basics)</span> 
+                                </li>
+
+                                
+                                <li>
+                                    <span class="color-span">Other Tools: </span><span>VS Code, Dreamweaver,  Veeva CRM, Salesforce, Prettier, Chrome Dev tools</span> 
+                                </li>
+
+                            </ul>
+                        
+                        </div>
+
+    <!------------------- Experience --------------->
+                    
+                        <div class="about-tabs-content experience-content">
+                            <ul>
+                                <li>
+                                    <span class="color-span">Indegene Private Limited - Web Developer <br> </span>
+                                        June 2021 - Dec 2023
+                                </li>
+
+                                <li>
+                                    <span class="color-span">Skill Santa – Frontend Developer	<br> </span> 	   	
+                                        June 2020  - May 2021
+                                </li>
+
+                                <li>
+                                    <span class="color-span">Inncrewin Technologies Pvt Ltd - Software Engineer Trainee<br> </span>
+                                        October 2018  - December 2019 
+                                </li>
+
+                            </ul>
+                        
+                        </div> 
+
+    <!------------------- Education --------------->
+
+                        
+                        <div class="about-tabs-content education-content" >
+                            <ul>
+                                <li>
+                                    <span class="color-span">B.tech - Computer Science Engineering (CSE) – 2017</span> <br>
+                                        College of Engineering Thalassery (CUSAT) – 7.4 CGPA 
+                                    
+                                </li>
+
+                            </ul>
+                        
+                        </div> 
+
+
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    <!-- About Page End -->
+
+
+    <!-- Services Page Start -->
+
+    <div class="service-page" id="service-div">
+            <div class="container-service">
+                <h1 class="title-service" >
+                My Services
+                </h1>
+                <div class="service-list">
+                    <div class="service-item">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h1>Front End Development</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+
+                        </p>
+                        <a href="#">Learn more..</a>
+                    </div>
+                    <div class="service-item">
+                        <i class="fa-regular fa-images"></i>
+                        <h1>Photography</h1>
+                        <p>
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+                        </p>
+                        <a href="#">Learn more..</a>
+                    </div>
+                    <div class="service-item">
+                        <i class="fa-solid fa-palette"></i>
+                        <h1>Art</h1>
+                        <p>
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+
+                        </p>
+                        <a href="#">Learn more..</a>
+                    </div>
+
+                </div>
+            
+            </div>
+    </div>
+    <!-- Services Page End -->
+
+    <!-- Portfolio Page Start -->
+
+        <div class="portfolio-page" id="portfolio-div">
+            <div class="container-portfolio">
+
+                <h1 class="title-portfolio">My Works</h1>
+                <div class="work-list">
+                    <div class="work-item">
+                        <img src="./images/work-1.png" class="img-item" alt="">
+                        <div class="work-details">
+                            <h2>To Do Tracker</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                            </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <img src="./images/work-2.png" alt="">
+                        <div class="work-details">
+                            <h2>Rock Paper Scissors</h2>
+                            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                            </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <img src="./images/work-3.png" alt=""> 
+                        <div class="work-details">
+                            <h2>Star Rating</h2>
+                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <div class="see-more-div">
+                    <a href="#"><button class="btn">See more</button></a>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Portfolio Page End -->
+
+
+    <!-- Contact Page Start -->
+
+        <div class="contact-page"  id="contact-div">
+            <div class="container-contact">
+                <div class="contact-row">
+                    <div class="contact-detail-col">
+                        <h1 class="title-contact">Contact Me</h1>
+                        <div class="contact-details">
+                            <p><i class="fa-solid fa-square-envelope"></i>cotact236@example.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i>+91-0000000000</p>
+
+                        </div>
+                        
+                        <div class="social-media">
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="./images/Ami-cv.pdf" class="resume-mob-btn" download><button class="contact-btn "><i class="fa-solid fa-file-arrow-down" style="color: white;"></i>Resume</button></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-col">
+                        <form action="" name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="abc@example.com" required>
+                            <textarea name="message" rows="6" placeholder="Enter Your Message Here" required></textarea>
+                            <button type="submit" class="contact-btn form-btn2">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Contact Page End -->
+
+
+</div>
+<div class="copyright-div">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 by Ameera, made with passion and <i class="fa-solid fa-hand-holding-heart"></i>
+    </p>
+</div>
+
+
+<script src="./js/index.js"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQkggmgb1y5eS8UpSQMp7BlMXASf2ydeZDm9qZ14iewX0gcDiOI4S07DSM3iEYlYwC/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbzQkggmgb1y5eS8UpSQMp7BlMXASf2ydeZDm9qZ14iewX0gcDiOI4S07DSM3iEYlYwC/exec -->
