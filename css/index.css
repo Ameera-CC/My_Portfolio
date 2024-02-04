@@ -82,8 +82,9 @@ padding: 10px 40px;
 .service-page,
 .portfolio-page,
 .contact-page { 
-    padding-top: 50px; /* Adjust this value based on your navigation bar's height */
+    padding-top: 50px;  /*Adjust this value based on your navigation bar's height */
 }
+
 
 
 /*-------- Home Section --------*/
@@ -91,9 +92,6 @@ padding: 10px 40px;
 .home-page{
     width: 100%;
     height: 100vh; 
-    /* background-image: url(../images/background.png);
-    background-size: cover;
-    background-position: center; */
 } 
 
 .logo-img{
@@ -123,6 +121,8 @@ padding: 10px 40px;
     font-size: 20px;
     margin-top: 20px;
     font-weight: normal;
+    color: rgb(242, 3, 95);
+
 }
 
 .profile-image{
@@ -327,7 +327,7 @@ padding: 10px 40px;
 
 .work-item{
     margin-top: 30px;
-    background-color:rgb(40, 38, 38);;
+    /* background-color:rgb(40, 38, 38);; */
     border-radius: 5%;
     position: relative;
 
@@ -340,6 +340,7 @@ padding: 10px 40px;
 
 .work-item img{
     width: 100%;
+    height: 100%;
     border-radius: 20px;
     display: block;
     transition: transform 0.5s;
@@ -483,6 +484,13 @@ padding: 10px 40px;
     outline: none;
     color: #ffffff;
     border-radius: 5px;
+
+ }
+
+ #submit-success{
+    color: #61b752;
+    display: block; /*otherwise span will not accept styles linke margin padding etc*/
+    margin: 20px;
 
  }
 

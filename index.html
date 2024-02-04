@@ -173,10 +173,10 @@
                         <i class="fa-solid fa-laptop-code"></i>
                         <h1>Front End Development</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa.Aenean massa.Aenean massa.Aenean massa. 
 
                         </p>
-                        <a href="#">Learn more..</a>
+                        <a href="#" >Learn more..</a>
                     </div>
                     <div class="service-item">
                         <i class="fa-regular fa-images"></i>
@@ -211,40 +211,62 @@
                 <h1 class="title-portfolio">My Works</h1>
                 <div class="work-list">
                     <div class="work-item">
-                        <img src="./images/work-1.png" class="img-item" alt="">
-                        <div class="work-details">
-                            <h2>To Do Tracker</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-                            </p>
-                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work-item">
-                        <img src="./images/work-2.png" alt="">
+                        <img src="./images/rock-paper-scissorgame.png" alt="">
                         <div class="work-details">
                             <h2>Rock Paper Scissors</h2>
-                            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                            <p>
+                                Click on Rock/Paper/scissors button as per your choice. Computer will play random movement against you. Let's try out your Luck...!
                             </p>
-                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://ameera-cc.github.io/Rock-Paper-Scissor-responsive-sessionStorage/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <img src="./images/to-do-list.png" class="img-item" alt="">
+                        <div class="work-details">
+                            <h2>To Do Tracker</h2>
+                            <p>
+                                Store your tasks and due date, so that you won't miss your goal. You can delete once your task is done. 
+                            </p>
+                            <a href="https://ameera-cc.github.io/MyTask_Manager/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
 
                     <div class="work-item">
-                        <img src="./images/work-3.png" alt=""> 
+                        <img src="./images/star-rating.png" alt=""> 
                         <div class="work-details">
                             <h2>Star Rating</h2>
-                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            <p>
+                                Click on the star to rate your experience. 
                             </p>
-                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://ameera-cc.github.io/Star-Rating/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
-
+                    <div class="work-item">
+                        <img src="./images/youtube.png" alt="">
+                        <div class="work-details">
+                            <h2>Youtube UI</h2>
+                            <p>
+                                This is just a user interface of Youtube to showcase my frontend development skills. 
+                            </p>
+                            <a href="https://ameera-cc.github.io/Youtube"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <img src="./images/salary-Hike-Calc.png" alt="">
+                        <div class="work-details">
+                            <h2>Salary hike calculator</h2>
+                            <p>
+                                This will help you to find the expected CTC in amount as well as hike percentage. 
+                            </p>
+                            <a href=" https://ameera-cc.github.io/Recruiter-Calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
                     
 
                 </div>
-                <div class="see-more-div">
+                <!-- <div class="see-more-div">
                     <a href="#"><button class="btn">See more</button></a>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -256,9 +278,9 @@
 
         <div class="contact-page"  id="contact-div">
             <div class="container-contact">
+                <h1 class="title-contact">Contact Me</h1>
                 <div class="contact-row">
                     <div class="contact-detail-col">
-                        <h1 class="title-contact">Contact Me</h1>
                         <div class="contact-details">
                             <p><i class="fa-solid fa-square-envelope"></i>cotact236@example.com</p>
                             <p><i class="fa-solid fa-square-phone"></i>+91-0000000000</p>
@@ -281,6 +303,7 @@
                             <button type="submit" class="contact-btn form-btn2">Submit</button>
 
                         </form>
+                        <span id="submit-success"></span>
                     </div>
                 </div>
             </div>
@@ -299,19 +322,7 @@
 
 <script src="./js/index.js"></script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQkggmgb1y5eS8UpSQMp7BlMXASf2ydeZDm9qZ14iewX0gcDiOI4S07DSM3iEYlYwC/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
 </body>
 </html>
 
-<!-- https://script.google.com/macros/s/AKfycbzQkggmgb1y5eS8UpSQMp7BlMXASf2ydeZDm9qZ14iewX0gcDiOI4S07DSM3iEYlYwC/exec -->

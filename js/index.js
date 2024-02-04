@@ -36,6 +36,7 @@
 
     }
 
+
     var sideMenu = document.getElementById('side-menu');
 
     function openMenu(){
@@ -50,3 +51,27 @@
         sideMenu.style.right= '-200px';
 
     }
+
+
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQkggmgb1y5eS8UpSQMp7BlMXASf2ydeZDm9qZ14iewX0gcDiOI4S07DSM3iEYlYwC/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const succesMsg = document.getElementById('submit-success');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            succesMsg.innerHTML ='Message sent succesfully';
+            setTimeout(() => {
+                succesMsg.innerHTML ='';
+            }, 3000);
+            form.reset();
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+
+    
